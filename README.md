@@ -8,6 +8,6 @@ link naar de website: https://martijnsark.github.io/Martijns-frontend-eindopdrac
 
 ## English
 
-link to the website: https://martijnsark.github.io/Martijns-frontend-eindopdracht/
-
 The images from this website have been taken copyright free from: https://pixabay.com/
+
+link to the website: https://martijnsark.github.io/Martijns-frontend-eindopdracht/
