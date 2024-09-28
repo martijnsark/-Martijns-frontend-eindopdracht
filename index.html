@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 
+<!--the nav bar containing the logo and the links to other pages-->
 <nav>
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo image" class="logo">
+    </div>
+
     <ul class="ul">
         <a href="link.html">link</a>
         <a href="link.html">link</a>
         <a href="link.html">link</a>
         <a href="link.html">link</a>
-        <a class="black-box" href="link.html">link</a>
+        <a class="black-box" href="contact.html">link</a>
     </ul>
 </nav>
 
@@ -27,21 +32,133 @@
     <p>Neque sociosqu iaculis varius facilisi condimentum lacus ac potenti.</p>
     <p>Neque sociosqu iaculis varius facilisi.</p>
     <div class="link-container"> 
-        <a class="black-box" href="link.html">link</a>
+        <a class="black-box" href="contact.html">link</a>
         <a href="link.html">link</a>
     </div>
-    
+
+  
 </header>
 
+<hr class="mid-section-line">
+
 <main>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a brief introduction.</p>
+
+    <h2 class="subheading">subheading</h2>
+
+    <section class="card-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="content-inside-card">
+                <img src="images/product-one.jpg" alt="Logo image" class="card-image">
+                <h3 class="product">product 1</h3>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating1" value="5">
+                    <label for="star5" title="5 stars">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating1" value="4">
+                    <label for="star4" title="4 stars">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating1" value="3">
+                    <label for="star3" title="3 stars">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating1" value="2">
+                    <label for="star2" title="2 stars">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating1" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                </div>
+
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis.</p>
+
+                <a class="black-box" href="contact.html">link</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="content-inside-card">
+                <img src="images/product-two.jpg" alt="Logo image" class="card-image">
+                <h3 class="product">product 2</h3>
+                <div class="star-rating">
+                    <input type="radio" id="star5-2" name="rating2" value="5">
+                    <label for="star5-2" title="5 stars">&#9733;</label>
+
+                    <input type="radio" id="star4-2" name="rating2" value="4">
+                    <label for="star4-2" title="4 stars">&#9733;</label>
+
+                    <input type="radio" id="star3-2" name="rating2" value="3">
+                    <label for="star3-2" title="3 stars">&#9733;</label>
+
+                    <input type="radio" id="star2-2" name="rating2" value="2">
+                    <label for="star2-2" title="2 stars">&#9733;</label>
+
+                    <input type="radio" id="star1-2" name="rating2" value="1">
+                    <label for="star1-2" title="1 star">&#9733;</label>
+                </div>
+
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis.</p>
+
+                <a class="black-box" href="contact.html">link</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="content-inside-card">
+                <img src="images/product-three.jpg" alt="Logo image" class="card-image">
+                <h3 class="product">product 3</h3>
+                <div class="star-rating">
+                    <input type="radio" id="star5-3" name="rating3" value="5">
+                    <label for="star5-3" title="5 stars">&#9733;</label>
+
+                    <input type="radio" id="star4-3" name="rating3" value="4">
+                    <label for="star4-3" title="4 stars">&#9733;</label>
+
+                    <input type="radio" id="star3-3" name="rating3" value="3">
+                    <label for="star3-3" title="3 stars">&#9733;</label>
+
+                    <input type="radio" id="star2-3" name="rating3" value="2">
+                    <label for="star2-3" title="2 stars">&#9733;</label>
+
+                    <input type="radio" id="star1-3" name="rating3" value="1">
+                    <label for="star1-3" title="1 star">&#9733;</label>
+                </div>
+
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis varius.</p>
+                <p>Neque sociosqu iaculis.</p>
+
+                <a class="black-box" href="contact.html">link</a>
+            </div>
+        </div>
+
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2024 Your Name</p>
+    <div class="footer-logo-container">
+        <img src="images/logo.png" alt="Logo image" class="logo">
+    </div>
+
+    <p class="copyright">Copyright 2024 Bedrijfsnaam</p>
+    
+    <div class="footer-social-container">
+        <img src="images/insta.jpg" alt="Instagram link" class="footer-social-image">
+        <img src="images/facebook.png" alt="Facebook link" class="footer-social-image">
+        <img src="images/snapchat.png" alt="Snapchat link" class="footer-social-image">
+    </div>
+
+    <div class="footer-webpage-links">
+        <p>Privacyverklaring</p>
+        <p>Algemene voorwaarden</p>
+        <p>Cookiebeleid</p>
+        <p>Contact</p>
+    </div>
 </footer>
     
    

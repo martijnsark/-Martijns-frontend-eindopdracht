@@ -5,7 +5,7 @@
 }
 
 nav {
-    background-color: whitesmoke;
+    background-color: darkgray;
     position: relative;
     display: flex;
     flex-direction: row; 
@@ -15,7 +15,7 @@ nav {
     padding-right: 60px;
 }
 
-nav a {
+a {
     color: black; 
     text-decoration: none; 
     padding: 10px 20px; 
@@ -24,6 +24,24 @@ nav a {
     border: 2px solid black; 
     border-radius: 5px; 
     transition: background-color 0.3s; 
+}
+
+.logo-container {
+    background-color: black;
+    width: 25px; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px; 
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-right: 60%;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
 }
 
 .black-box {
@@ -80,25 +98,161 @@ header a {
 }
 
 a:hover{
-    background-color: gray;
+    background-color: darkcyan;
 }
+
+.mid-section-line {
+    width: 100vw;         
+    border: none;        
+    border-bottom: 2px solid red; 
+    margin: 0;             
+    position: relative;    
+    top: 0;            
+}
+
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height for centering vertically */
     padding: 0;
     margin: 0;
 }
 
-footer {
-    background-color: black;
-    color: whitesmoke;
-    height: var(--footer-height);
+.subheading {
+    text-align: left;
+    margin-right: 85%;
+}
+
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Ensure the container takes full width */
+    gap: 20px; /* Adds some space between the cards */
 }
+
+.card {
+    width: 30%; /* Each card takes up 20% of the container's width */
+    height: 40vh; /* A set height of 30% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; /* Include padding and border in width/height */
+    padding: 10px; /* Ensure the content inside doesn't overflow */
+}
+
+.card :hover {
+    background-color: rgb(23, 112, 69);
+}
+
+.content-inside-card {
+    padding: 10px;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.card-image {
+    width: 100%;
+    height: auto; /* Keeps the image responsive inside the card */
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.5rem;
+    justify-content: left;
+}
+
+/* Hide radio buttons */
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+/* Style the stars (labels) */
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect: fill stars from left to the hovered star */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffc107; /* Fill stars yellow when hovered over */
+}
+
+/* Ensure the stars fill from left to the selected */
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ddd; /* Reset all stars after the checked star */
+}
+
+.star-rating input[type="radio"]:checked + label,
+.star-rating input[type="radio"]:checked + label ~ label {
+    color: #ffc107; /* Fill all stars before and including the clicked star */
+}
+
+footer {
+    margin-top: 160px;
+    padding: 40px; /* Add 40px padding to create space from all sides */
+    padding-bottom: 160px; /* Adjust bottom padding to maintain total height */
+    background-color: black;
+    color: whitesmoke;
+    position: relative; /* Establish a positioning context for absolute positioning */
+    height: var(--footer-height); /* Ensure the footer maintains its height */
+}
+
+.footer-logo-container {
+    width: 25px; 
+    height: 60px; 
+    background-color: rgb(40, 46, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px; /* Add margin to keep it 40px away from all sides */
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.copyright {
+    margin-top: 20px; /* 20px below the logo */
+    margin-left: 50px; /* Align with logo on the left */
+}
+
+.footer-social-container {
+    display: flex;
+    margin-left: 50px; /* Align with logo and copyright */
+    margin-top: 20px; /* 20px below the copyright */
+}
+
+.footer-social-image {
+    margin-right: 10px; /* 10px gap between social images */
+    width: 50px;
+    height: 50px;
+}
+
+.footer-webpage-links {
+    position: absolute; /* Position absolutely within the footer */
+    right: 50px; /* Align to the right with 50px margin */
+    top: 120px; /* Align with the copyright height */
+    display: flex; /* Use flex for horizontal stacking */
+    flex-direction: row; /* Stack links horizontally */
+    align-items: center; /* Align links to the center vertically */
+}
+
+/* spacing in the weblinks */
+.footer-webpage-links p {
+    margin: 0; /* Remove default margin */
+    padding: 5px 15px; /* Add horizontal spacing */
+}
+
+footer p:hover {
+    text-decoration: underline; 
+}
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
