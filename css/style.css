@@ -1,9 +1,10 @@
 :root {
-    /*define size of website size on all laptops/computers*/
+    /* Define size of website size on all laptops/computers */
     --header-height: 100vh;
     --footer-height: 50px;
 }
 
+/* Navigation Bar */
 nav {
     background-color: darkgray;
     position: relative;
@@ -11,15 +12,15 @@ nav {
     flex-direction: row; 
     justify-content: flex-end; 
     align-items: center; 
-    padding: 10px; 
-    padding-right: 60px;
+    padding: 1rem; /* Use rem for scalability */
+    padding-right: 3rem; /* Use rem for better scalability */
 }
 
 a {
     color: black; 
     text-decoration: none; 
-    padding: 10px 20px; 
-    margin: 5px; 
+    padding: 0.5rem 1rem; /* Use rem */
+    margin: 0.5rem; /* Use rem */
     display: inline-block; 
     border: 2px solid black; 
     border-radius: 5px; 
@@ -28,20 +29,19 @@ a {
 
 .logo-container {
     background-color: black;
-    width: 25px; 
-    height: 60px; 
+    width: 5%; /* Use percentage for scalability */
+    max-width: 150px; /* Maximum width for larger screens */
+    height: auto; /* Allow auto height */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1px; 
-    padding-left: 55px;
-    padding-right: 55px;
-    margin-right: 60%;
+    padding: 0.5rem; /* Use rem */
+    margin-right: 5%; /* Use percentage */
 }
 
 .logo {
-    width: 35px;
-    height: 35px;
+    width: 100%; /* Make logo responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .black-box {
@@ -49,6 +49,7 @@ a {
     color: whitesmoke;
 }
 
+/* Header Section */
 header {
     position: relative;
     display: flex;
@@ -57,7 +58,7 @@ header {
     align-items: center;     
     height: var(--header-height); 
     
-    /*background image*/
+    /* Background Image */
     background-image: url('../images/background.jpg');
     background-size: cover;  
     background-position: center;  
@@ -66,16 +67,16 @@ header {
 
 header h1 {
     position: absolute;
-    top: 23vh;  
+    top: 20vh;  
     left: 50%;
-    transform: translateX(-85%);
+    transform: translateX(-50%); /* Center horizontally */
     font-size: 3rem;
     margin: 0;
 }
 
 header p {
     text-align: center;
-    margin: 10px 0;
+    margin: 1rem 0; /* Use rem */
     font-size: 1.5rem;
 }
 
@@ -83,26 +84,26 @@ header p {
     display: flex;               
     justify-content: center;      
     align-items: center;          
-    margin-top: 20px;           
+    margin-top: 2rem; /* Use rem */
 }
 
 header a {
     color: black; 
     text-decoration: none; 
-    padding: 10px 20px; 
-    margin: 5px; 
+    padding: 0.5rem 1rem; /* Use rem */
+    margin: 0.5rem; /* Use rem */
     display: inline-block; 
     border: 2px solid black; 
     border-radius: 5px; 
     transition: background-color 0.3s; 
 }
 
-a:hover{
+a:hover {
     background-color: darkcyan;
 }
 
 .mid-section-line {
-    width: 100vw;         
+    width: 100%; /* Use 100% for full width */
     border: none;        
     border-bottom: 2px solid red; 
     margin: 0;             
@@ -110,7 +111,7 @@ a:hover{
     top: 0;            
 }
 
-
+/* Main Content */
 main {
     display: flex;
     flex-direction: column;
@@ -123,7 +124,7 @@ main {
 
 .subheading {
     text-align: left;
-    margin-right: 85%;
+    margin-right: 10%; /* Use percentage */
 }
 
 .card-container {
@@ -131,34 +132,35 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensure the container takes full width */
-    gap: 20px; /* Adds some space between the cards */
+    gap: 2rem; /* Adds some space between the cards */
 }
 
 .card {
-    width: 30%; /* Each card takes up 20% of the container's width */
-    height: 40vh; /* A set height of 30% of the viewport height */
+    width: 30%; /* Each card takes up 30% of the container's width */
+    height: 40vh; /* A set height of 40% of the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box; /* Include padding and border in width/height */
-    padding: 10px; /* Ensure the content inside doesn't overflow */
+    padding: 1rem; /* Use rem */
 }
 
-.card :hover {
+.card:hover {
     background-color: rgb(23, 112, 69);
 }
 
 .content-inside-card {
-    padding: 10px;
+    padding: 1rem; /* Use rem */
     flex-grow: 1;
     border: 2px solid black;
 }
 
 .card-image {
-    width: 100%;
-    height: auto; /* Keeps the image responsive inside the card */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Keep the image responsive */
 }
 
+/* Star Rating */
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
@@ -194,10 +196,10 @@ main {
     color: #ffc107; /* Fill all stars before and including the clicked star */
 }
 
+/* Footer */
 footer {
-    margin-top: 160px;
-    padding: 40px; /* Add 40px padding to create space from all sides */
-    padding-bottom: 160px; /* Adjust bottom padding to maintain total height */
+    margin-top: 10rem; /* Use rem for consistent spacing */
+    padding: 2rem; /* Add padding for spacing */
     background-color: black;
     color: whitesmoke;
     position: relative; /* Establish a positioning context for absolute positioning */
@@ -205,54 +207,53 @@ footer {
 }
 
 .footer-logo-container {
-    width: 25px; 
-    height: 60px; 
+    width: 5%; /* Use percentage for scalability */
+    max-width: 150px; /* Maximum width for larger screens */
+    height: auto; /* Allow auto height */
     background-color: rgb(40, 46, 44);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 40px; /* Add margin to keep it 40px away from all sides */
-    padding-left: 55px;
-    padding-right: 55px;
+    margin: 0 5%; /* Use percentage */
+    padding-left: 2rem; /* Use rem */
+    padding-right: 2rem; /* Use rem */
 }
 
 .copyright {
-    margin-top: 20px; /* 20px below the logo */
-    margin-left: 50px; /* Align with logo on the left */
+    margin-top: 2rem; /* Use rem */
+    margin-left: 2rem; /* Use rem */
 }
 
 .footer-social-container {
     display: flex;
-    margin-left: 50px; /* Align with logo and copyright */
-    margin-top: 20px; /* 20px below the copyright */
+    margin-left: 2rem; /* Use rem */
+    margin-top: 2rem; /* Use rem */
 }
 
 .footer-social-image {
-    margin-right: 10px; /* 10px gap between social images */
+    margin-right: 1rem; /* Use rem */
     width: 50px;
     height: 50px;
 }
 
 .footer-webpage-links {
     position: absolute; /* Position absolutely within the footer */
-    right: 50px; /* Align to the right with 50px margin */
+    right: 2rem; /* Align to the right with rem */
     top: 120px; /* Align with the copyright height */
     display: flex; /* Use flex for horizontal stacking */
     flex-direction: row; /* Stack links horizontally */
     align-items: center; /* Align links to the center vertically */
 }
 
-/* spacing in the weblinks */
+/* Spacing in the weblinks */
 .footer-webpage-links p {
     margin: 0; /* Remove default margin */
-    padding: 5px 15px; /* Add horizontal spacing */
+    padding: 0.5rem 1rem; /* Use rem */
 }
 
 footer p:hover {
     text-decoration: underline; 
 }
-
-
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -262,5 +263,9 @@ footer p:hover {
     header h1 {
         font-size: 2rem; 
         top: 20vh; 
+    }
+    .card {
+        width: 90%; /* Increase width on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
     }
 }
