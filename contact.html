@@ -30,16 +30,82 @@
     <p>Neque sociosqu iaculis varius facilisi condimentum lacus ac potenti.</p>
     <p>Neque sociosqu iaculis varius facilisi condimentum lacus ac potenti.</p>
     <p>Neque sociosqu iaculis varius facilisi condimentum lacus ac potenti.</p>
-    <p>Neque sociosqu iaculis varius facilisi condimentum lacus ac potenti.</p>
     <p>Neque sociosqu iaculis varius facilisi.</p> 
 </header>
 
 
 
 <main>
+    <section class="form">
+        <form id="userForm">
+            <!-- Firstname and Surname on the same line -->
+            <div class="form-row name-row">
+                <div class="form-group">
+                    <label for="firstname">Voornaam:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Voornaam" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Achternaam:</label>
+                    <input type="text" id="surname" name="surname" placeholder="Achternaam" required>
+                </div>
+            </div>
 
+            <!-- Email Input Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
 
+            <!-- Birthplace and Birthdate on the same line -->
+            <div class="form-row birth-row">
+                <div class="form-group">
+                    <label for="birthplace">Woonplaats:</label>
+                    <input type="text" id="birthplace" name="birthplace" placeholder="Woonplaats" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Geboortedatum:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
 
+            <!-- Subject Dropdown Field -->
+            <div class="form-group">
+                <label for="subject">Onderwerp:</label>
+                <select id="subject" name="subject" required style="width: 100%; padding: 8px;">
+                    <option value="" disabled selected>Kies het onderwerp van het bericht...</option>
+                    <option value="Vraag">Vraag</option>
+                    <option value="Klacht">Klacht</option>
+                    <option value="Opmerking">Opmerking</option>
+                    <option value="Suggestie">Suggestie</option>
+                </select>
+            </div>
+
+            <!-- Message Input Field -->
+            <div class="form-group">
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Schrijf je bericht hier" required></textarea>
+            </div>
+
+            <!-- Subscribe to Newsletter -->
+            <div class="form-group radio-group">
+                <label>Inschrijven voor nieuwsbrief?</label>
+                <div class="radio-container">
+                    <input type="radio" id="newsletterYes" name="newsletter" value="Yes" required>
+                    <label for="newsletterYes">Ja</label>
+                    <input type="radio" id="newsletterNo" name="newsletter" value="No">
+                    <label for="newsletterNo">Nee</label>
+                </div>
+            </div>
+
+            <!-- Terms of Service Checkbox -->
+            <div class="form-group terms-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+
+            <button type="submit">Verzenden</button>
+        </form>
+    </section>
 </main>
 
 
