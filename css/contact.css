@@ -336,6 +336,7 @@ footer p:hover {
         flex-direction: column;
         align-items: center;
         padding-right: 10px; /* Reduce right padding */
+        padding-bottom: 80px;
     }
 
     nav a {
