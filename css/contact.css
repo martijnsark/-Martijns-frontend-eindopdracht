@@ -276,9 +276,6 @@ footer p:hover {
     text-decoration: underline; 
 }
 
-
-
-
 /* Media Queries */
 @media (max-width: 768px) {
     header {
@@ -287,5 +284,99 @@ footer p:hover {
     header h1 {
         font-size: 2rem; 
         top: 20vh; 
+    }
+}
+
+
+
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    /* Adjust header height for mobile devices */
+    header {
+        height: 70vh; /* Reduce header height on mobile */
+        padding: 20px;
+    }
+
+    /* Adjust the size of header elements */
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        top: 15vh; /* Adjust position */
+    }
+
+    /* Center the logo and reduce padding */
+    .logo-container {
+        margin-right: 0; /* Remove right margin */
+        padding: 0; /* Remove padding */
+        width: auto; /* Adjust width to fit mobile */
+    }
+
+    .logo {
+        width: 25px; /* Smaller logo for mobile */
+        height: 25px;
+    }
+
+    /* Stack the navigation items vertically */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 10px; /* Reduce right padding */
+    }
+
+    nav a {
+        font-size: 14px; /* Smaller font for nav links */
+        margin: 5px 0; /* Adjust margin */
+        width: 100%; /* Make links span full width */
+    }
+
+    /* Adjust main section padding */
+    main {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    /* Adjust form width and layout */
+    .form {
+        max-width: 100%; /* Make form span full width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack form fields vertically */
+        gap: 15px; /* Reduce gap between form groups */
+    }
+
+    /* Adjust button width */
+    button {
+        width: 100%; /* Ensure button is full width */
+        font-size: 14px; /* Smaller button font size */
+    }
+
+    /* Adjust footer padding and layout */
+    footer {
+        padding: 20px; /* Reduce padding */
+        padding-bottom: 80px; /* Adjust bottom padding */
+    }
+
+    .footer-logo-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-social-container {
+        margin-left: 20px; /* Align with logo */
+    }
+
+    /* Stack webpage links vertically */
+    .footer-webpage-links {
+        flex-direction: column; /* Stack links vertically */
+        right: 10px; /* Adjust right margin */
+        top: auto; /* Remove top alignment */
+    }
+
+    .footer-webpage-links p {
+        padding: 10px 0; /* Add vertical spacing */
     }
 }
