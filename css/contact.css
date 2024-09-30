@@ -371,12 +371,7 @@ footer p:hover {
     /* Adjust footer padding and layout */
     footer {
         padding: 20px; /* Reduce padding */
-        padding-bottom: 160px; /* Adjust bottom padding */
-    }
-
-    .footer-logo-container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-bottom: 480px; /* Adjust bottom padding */
     }
 
     .footer-social-container {
