@@ -292,6 +292,9 @@ footer p:hover {
 
 
 
+
+
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
     /* Adjust header height for mobile devices */
@@ -363,7 +366,7 @@ footer p:hover {
     /* Adjust footer padding and layout */
     footer {
         padding: 20px; /* Reduce padding */
-        padding-bottom: 80px; /* Adjust bottom padding */
+        padding-bottom: 160px; /* Adjust bottom padding */
     }
 
     .footer-logo-container {
