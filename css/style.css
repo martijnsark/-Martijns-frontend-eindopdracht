@@ -97,7 +97,7 @@ header a {
     transition: background-color 0.3s; 
 }
 
-a:hover{
+a:hover {
     background-color: darkcyan;
 }
 
@@ -135,8 +135,8 @@ main {
 }
 
 .card {
-    width: 30%; /* Each card takes up 20% of the container's width */
-    height: 40vh; /* A set height of 30% of the viewport height */
+    width: 30%; /* Each card takes up 30% of the container's width */
+    height: 40vh; /* A set height of 40% of the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -255,14 +255,70 @@ footer p:hover {
 
 
 
-
-/* Media Queries */
+/* Mobile Media Queries */
 @media (max-width: 768px) {
-    header {
-        height: 80vh; 
+    /* Adjust the nav bar for mobile */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
+
+    /* Center the logo and nav links */
+    .logo-container {
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        height: auto; 
+        padding: 20px;
+    }
+
+    /* Center the headline and reduce font size */
     header h1 {
-        font-size: 2rem; 
-        top: 20vh; 
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Make cards stack vertically and center them */
+    .card-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%; /* Make the cards take up more space on smaller screens */
+    }
+
+    /* Adjust footer layout for mobile */
+    .footer-webpage-links {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .footer-logo-container,
+    .copyright,
+    .footer-social-container {
+        margin-left: 0;
+        text-align: center;
     }
 }
