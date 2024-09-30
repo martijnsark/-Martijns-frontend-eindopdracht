@@ -4,6 +4,7 @@
     --footer-height: 50px;
 }
 
+/* General styles for desktop/laptop */
 nav {
     background-color: darkgray;
     position: relative;
@@ -97,7 +98,7 @@ header a {
     transition: background-color 0.3s; 
 }
 
-a:hover {
+a:hover{
     background-color: darkcyan;
 }
 
@@ -109,7 +110,6 @@ a:hover {
     position: relative;    
     top: 0;            
 }
-
 
 main {
     display: flex;
@@ -135,8 +135,8 @@ main {
 }
 
 .card {
-    width: 30%; /* Each card takes up 30% of the container's width */
-    height: 40vh; /* A set height of 40% of the viewport height */
+    width: 30%; /* Each card takes up 20% of the container's width */
+    height: 40vh; /* A set height of 30% of the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -144,7 +144,7 @@ main {
     padding: 10px; /* Ensure the content inside doesn't overflow */
 }
 
-.card :hover {
+.card:hover {
     background-color: rgb(23, 112, 69);
 }
 
@@ -216,7 +216,6 @@ footer {
     padding-right: 55px;
 }
 
-
 .copyright {
     margin-top: 20px; /* 20px below the logo */
     margin-left: 50px; /* Align with logo on the left */
@@ -243,7 +242,6 @@ footer {
     align-items: center; /* Align links to the center vertically */
 }
 
-/* spacing in the weblinks */
 .footer-webpage-links p {
     margin: 0; /* Remove default margin */
     padding: 5px 15px; /* Add horizontal spacing */
@@ -253,72 +251,87 @@ footer p:hover {
     text-decoration: underline; 
 }
 
-
-
-/* Mobile Media Queries */
+/* ------------------- Mobile Media Queries ------------------- */
 @media (max-width: 768px) {
-    /* Adjust the nav bar for mobile */
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    /* Center the logo and nav links */
-    .logo-container {
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
+    /* Adjust header height for mobile and add spacing */
     header {
-        height: auto; 
-        padding: 20px;
+        height: 100vh; /* Increase height for mobile */
+        padding: 20px; /* Add padding for extra spacing */
     }
-
-    /* Center the headline and reduce font size */
+    
     header h1 {
-        top: 0;
-        left: 50%;
+        font-size: 2rem; 
+        top: 30vh; /* Push the heading down more */
         transform: translateX(-50%);
-        font-size: 2rem;
         text-align: center;
     }
 
     header p {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 1.2rem;
+        margin: 15px 0;
+        line-height: 1.5; /* Add more spacing between text */
     }
 
-    /* Make cards stack vertically and center them */
+    .link-container {
+        margin-top: 40px; /* Increase space above the links */
+    }
+
+    .black-box {
+        padding: 15px 25px; /* Increase padding for larger tap targets */
+    }
+
+    /* Main section adjustments for mobile */
+    main {
+        padding: 30px 20px; /* Add padding inside the main content */
+        height: auto; /* Allow main to adjust dynamically to content */
+    }
+
+    .subheading {
+        margin-right: 0;
+        text-align: center; /* Center align subheading for mobile */
+    }
+
     .card-container {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Stack cards vertically */
+        gap: 40px; /* Increase space between cards */
+        padding: 20px;
     }
 
     .card {
-        width: 90%; /* Make the cards take up more space on smaller screens */
+        width: 90%; /* Make cards take more horizontal space */
+        height: auto; /* Auto adjust height */
+        padding: 20px;
+        margin-bottom: 40px; /* Add more space between cards */
     }
 
-    /* Adjust footer layout for mobile */
+    .content-inside-card {
+        padding: 20px; /* Increase padding inside the card */
+        flex-grow: 1;
+    }
+
+    .star-rating {
+        font-size: 2rem; /* Increase size for better mobile visibility */
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        padding: 60px 20px; /* Add extra padding for mobile */
+    }
+
+    .footer-logo-container {
+        margin: 0 auto; /* Center logo container */
+        padding: 20px 0; /* Increase padding */
+    }
+
     .footer-webpage-links {
-        position: static;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
+        position: static; /* Set position to static */
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px; /* Add spacing between links */
+        padding-top: 40px; /* Add more spacing above links */
     }
 
-    .footer-logo-container,
-    .copyright,
     .footer-social-container {
-        margin-left: 0;
-        text-align: center;
+        margin-left: 0; /* Center-align for mobile */
+        margin-top: 30px; /* Increase space between copyright and social links */
     }
 }
