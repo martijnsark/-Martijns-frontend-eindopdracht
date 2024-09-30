@@ -331,20 +331,28 @@ footer p:hover {
         width: 60vw; /* Maintain 60vw width for the black box */
     }
 
-    /* Stack the navigation items vertically but keep them at 20% width */
     nav {
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Horizontally center the links */
-        justify-content: center; /* Ensure vertical centering */
-        padding-right: 10px; /* Reduce right padding */
-        padding-bottom: 80px;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links horizontally */
+        justify-content: flex-start; /* Align items to the start */
+        padding-right: 0; /* Remove right padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
+        width: 100%; /* Make sure nav takes full width */
+    }
+
+    .ul {
+        display: flex; 
+        flex-direction: column; /* Stack links vertically */
+        justify-content: center; /* Center the links in the column */
+        align-items: center; /* Align links to center */
+        width: 100%; /* Ensure it spans full width */
     }
 
     nav a {
         font-size: 14px; /* Smaller font for nav links */
         margin: 5px 0; /* Adjust margin to add space between links */
-        width: 20%; /* Keep links at 20% width */
+        width: auto; /* Remove fixed width to allow for content */
         display: block; /* Make links behave as block elements */
         text-align: center; /* Center text within each link */
     }
