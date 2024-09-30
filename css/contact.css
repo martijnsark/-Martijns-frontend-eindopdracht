@@ -314,16 +314,24 @@ footer p:hover {
         margin-right: 0; /* Remove right margin */
         padding: 0; /* Remove padding */
         width: auto; /* Adjust width to fit mobile */
+        background-color: black;
+        width: 25px; 
+        height: 60px; 
         display: flex;
-        justify-content: center; /* Center logo */
+        justify-content: center;
         align-items: center;
+        padding: 1px; 
+        padding-left: 55px;
+        padding-right: 55px;
     }
 
-    /* Adjust navbar styles for mobile */
-    nav {
-        justify-content: center; /* Center all nav items */
-        padding: 10px 0; /* Adjust padding for mobile */
+    .black-box {
+        background-color: black;
+        color: whitesmoke;
+        width: 60vw; /* Maintain 60vw width for the black box */
     }
+
+    
 
     .ul {
         display: flex; 
@@ -395,4 +403,3 @@ footer p:hover {
         text-align: left; /* Align text to the left */
     }
 }
-
