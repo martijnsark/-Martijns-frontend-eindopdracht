@@ -318,6 +318,12 @@ footer p:hover {
         height: 25px;
     }
 
+    .black-box {
+        background-color: black;
+        color: whitesmoke;
+        width: 80vw;
+    }
+
     /* Stack the navigation items vertically */
     nav {
         flex-direction: column;
@@ -328,7 +334,7 @@ footer p:hover {
     nav a {
         font-size: 14px; /* Smaller font for nav links */
         margin: 5px 0; /* Adjust margin */
-        width: 100%; /* Make links span full width */
+        width: 20%; /* Make links span full width */
     }
 
     /* Adjust main section padding */
