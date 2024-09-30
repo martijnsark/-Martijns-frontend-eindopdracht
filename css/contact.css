@@ -377,18 +377,28 @@ footer p:hover {
         padding-bottom: 480px; /* Adjust bottom padding */
     }
 
-    .footer-social-container {
-        margin-left: 20px; /* Align with logo */
+    .copyright {
+        margin-top: 20px; /* 20px below the logo */
+        margin-left: 40px; /* Align with logo on the left */
     }
 
-    /* Stack webpage links vertically */
+    /* Ensure the social container appears first and webpage links are underneath it */
+    .footer-social-container {
+        margin-left: 20px; /* Align with logo */
+        margin-bottom: 20px; /* Add some space below the social container */
+    }
+
+    /* Ensure the webpage links are stacked underneath the social container */
     .footer-webpage-links {
+        display: flex;
         flex-direction: column; /* Stack links vertically */
-        right: 10px; /* Adjust right margin */
-        top: auto; /* Remove top alignment */
+        margin-left: 20px; /* Align with the social container */
+        margin-top: 20px; /* Add space between social container and webpage links */
     }
 
     .footer-webpage-links p {
-        padding: 10px 0; /* Add vertical spacing */
+        margin: 5px 0; /* Add vertical spacing between each paragraph */
+        padding: 0; /* Remove padding */
+        text-align: left; /* Align text to the left */
     }
 }
