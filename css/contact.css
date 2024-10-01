@@ -331,35 +331,20 @@ footer p:hover {
         width: 60vw; /* Maintain 60vw width for the black box */
     }
 
+    
+
+    .ul {
+        display: flex; 
+        flex-direction: column; /* Stack links vertically */
+        justify-content: center; /* Center the links in the column */
+        align-items: center; /* Align links to center */
+        width: 100%; /* Ensure it spans full width */
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    ul.ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers the links vertically */
-    }
-    
-    ul.ul a {
-        display: block;
-        text-decoration: none;
-        padding: 10px;
-        width: 100%;
-        text-align: center; /* Ensures the text is centered within each block */
-    }
-    
-    ul.ul a.black-box {
-        background-color: black;
-        color: white;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
     }
 
     nav a {
@@ -393,40 +378,39 @@ footer p:hover {
         font-size: 14px; /* Smaller button font size */
     }
 
-    /* Adjust footer padding and layout */
-footer {
-    display: flex; /* Ensure footer uses flexbox */
-    flex-direction: column; /* Stack items vertically */
-    padding: 20px; /* Reduce padding */
-    padding-bottom: 480px; /* Adjust bottom padding */
-}
+    footer {
+        display: flex; /* Ensure footer uses flexbox */
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Reduce padding */
+        padding-bottom: 480px; /* Adjust bottom padding */
+    }
+    
+    /* Adjust copyright position */
+    .copyright {
+        order: 1; /* Place copyright first */
+        margin-top: 20px; /* 20px below the logo */
+        margin-left: 40px; /* Align with logo on the left */
+    }
+    
+    /* Move social container beneath the copyright */
+    .footer-social-container {
+        order: 2; /* Ensure social container comes after copyright */
+        margin-left: 20px; /* Align with logo */
+        margin-bottom: 20px; /* Add some space below the social container */
+    }
+    
+    /* Ensure the webpage links are still positioned below */
+    .footer-webpage-links {
+        order: 3; /* Ensure webpage links come last */
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        margin-left: 20px; /* Align with the social container */
+        margin-top: 20px; /* Add space between social container and webpage links */
+    }
 
-/* Adjust copyright position */
-.copyright {
-    order: 1; /* Place copyright first */
-    margin-top: 20px; /* 20px below the logo */
-    margin-left: 40px; /* Align with logo on the left */
-}
-
-/* Move social container beneath the copyright */
-.footer-social-container {
-    order: 2; /* Ensure social container comes after copyright */
-    margin-left: 20px; /* Align with logo */
-    margin-bottom: 20px; /* Add some space below the social container */
-}
-
-/* Ensure the webpage links are still positioned below */
-.footer-webpage-links {
-    order: 3; /* Ensure webpage links come last */
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    margin-left: 20px; /* Align with the social container */
-    margin-top: 20px; /* Add space between social container and webpage links */
-}
-
-.footer-webpage-links p {
+    .footer-webpage-links p {
         margin: 5px 0; /* Add vertical spacing between each paragraph */
         padding: 0; /* Remove padding */
         text-align: left; /* Align text to the left */
-}
+    }
 }
