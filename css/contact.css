@@ -329,7 +329,6 @@ footer p:hover {
         width: 60vw; /* Maintain 60vw width for the black box */
     }
 
-
     .ul {
         display: flex; 
         flex-direction: column; /* Stack links vertically */
@@ -337,7 +336,6 @@ footer p:hover {
         align-items: center; /* Align links to center */
         width: 100%; /* Ensure it spans full width */
     }
-
 
     nav {
         display: flex;
@@ -379,7 +377,7 @@ footer p:hover {
     footer {
         display: flex; /* Ensure footer uses flexbox */
         flex-direction: column; /* Stack items vertically */
-        align-items: left;
+        align-items: flex-start; /* Align children to the left */
         padding: 20px; /* Reduce padding */
         padding-bottom: 480px; /* Adjust bottom padding */
     }
@@ -403,6 +401,7 @@ footer p:hover {
         order: 3; /* Ensure webpage links come last */
         display: flex;
         flex-direction: column; /* Stack links vertically */
+        width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 120px; /* Align with the social container */
         margin-top: 70px; /* Add space between social container and webpage links */
     }
