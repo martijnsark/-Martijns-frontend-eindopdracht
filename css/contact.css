@@ -394,7 +394,7 @@ footer p:hover {
     /* Move social container beneath the copyright */
     .footer-social-container {
         order: 2; /* Ensure social container comes after copyright */
-        margin-left: 20px; /* Align with logo */
+        margin-left: 30px; /* Align with logo */
         margin-bottom: 20px; /* Add some space below the social container */
     }
     
@@ -404,7 +404,7 @@ footer p:hover {
         display: flex;
         flex-direction: column; /* Stack links vertically */
         margin-left: 20px; /* Align with the social container */
-        margin-top: 20px; /* Add space between social container and webpage links */
+        margin-top: 30px; /* Add space between social container and webpage links */
     }
 
     .footer-webpage-links p {
