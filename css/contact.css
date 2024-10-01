@@ -340,6 +340,7 @@ footer p:hover {
         width: 100%; /* Ensure it spans full width */
     }
 
+    
     nav {
         display: flex;
         flex-direction: column;
