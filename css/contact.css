@@ -58,7 +58,7 @@ header {
     height: var(--header-height); 
     text-align: center;
     
-    /*background image*/
+    /*background color*/
     background-color: rgb(160, 76, 199);
     background-size: cover;  
     background-position: center;  
@@ -311,7 +311,7 @@ footer p:hover {
 
     /* Center the logo and reduce padding */
     .logo-container {
-        margin-left: 200px; 
+        margin-left: 230px; 
         background-color: black;
         width: 25px; 
         height: 60px; 
@@ -394,7 +394,7 @@ footer p:hover {
     /* Move social container beneath the copyright */
     .footer-social-container {
         order: 2; /* Ensure social container comes after copyright */
-        margin-left: 30px; /* Align with logo */
+        margin-left: 40px; /* Align with logo */
         margin-bottom: 20px; /* Add some space below the social container */
     }
     
@@ -403,7 +403,7 @@ footer p:hover {
         order: 3; /* Ensure webpage links come last */
         display: flex;
         flex-direction: column; /* Stack links vertically */
-        margin-left: 20px; /* Align with the social container */
+        margin-left: 40px; /* Align with the social container */
         margin-top: 70px; /* Add space between social container and webpage links */
     }
 
