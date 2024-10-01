@@ -385,7 +385,7 @@ footer p:hover {
     /* Adjust copyright position */
     .copyright {
         order: 1; /* Place copyright first */
-        margin-top: 20px; /* 20px below the logo */
+        margin-top: 40px; /* 20px below the logo */
         margin-left: 40px; /* Align with logo on the left */
     }
     
@@ -393,7 +393,7 @@ footer p:hover {
     .footer-social-container {
         order: 2; /* Ensure social container comes after copyright */
         margin-left: 40px; /* Align with logo */
-        margin-bottom: 20px; /* Add some space below the social container */
+        margin-bottom: 40px; /* Add some space below the social container */
     }
     
     /* Ensure the webpage links are still positioned below */
@@ -403,11 +403,10 @@ footer p:hover {
         flex-direction: column; /* Stack links vertically */
         width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 40px; /* Align with the social container */
-        margin-top: 70px; /* Add space between social container and webpage links */
     }
 
     .footer-webpage-links p {
-        margin: 5px 0; /* Add vertical spacing between each paragraph */
+        margin: 10px 0; /* Add vertical spacing between each paragraph */
         padding: 0; /* Remove padding */
         text-align: left; /* Align text to the left */
     }
