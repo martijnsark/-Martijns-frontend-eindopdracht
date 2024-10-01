@@ -395,6 +395,7 @@ footer p:hover {
         flex-direction: column; /* Stack links vertically */
         width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 40px; /* Align with the social container */
+        margin-top: 70px;
     }
 
     .footer-webpage-links p {
