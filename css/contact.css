@@ -311,6 +311,20 @@ footer p:hover {
         top: 15vh; /* Adjust position */
     }
 
+    /* Center the logo and reduce padding */
+    .logo-container {
+        background-color: black;
+        width: 25px; 
+        height: 60px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px; 
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-left: 220px; 
+    }
+
     nav .black-box {
         background-color: black;
         color: whitesmoke;
@@ -393,6 +407,19 @@ footer p:hover {
         margin-left: 40px; /* Align with the social container */
         margin-top: 70px;
     }
+
+    .footer-logo-container {
+        width: 25px; 
+        height: 60px; 
+        background-color: rgb(42, 50, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    
 
     .footer-webpage-links p {
         margin: 10px 0; /* Add vertical spacing between each paragraph */
