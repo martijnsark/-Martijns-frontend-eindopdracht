@@ -311,7 +311,7 @@ footer p:hover {
 
     /* Center the logo and reduce padding */
     .logo-container {
-        margin-left: 230px; 
+        margin-left: 220px; 
         background-color: black;
         width: 25px; 
         height: 60px; 
@@ -403,7 +403,7 @@ footer p:hover {
         order: 3; /* Ensure webpage links come last */
         display: flex;
         flex-direction: column; /* Stack links vertically */
-        margin-left: 40px; /* Align with the social container */
+        margin-left: 120px; /* Align with the social container */
         margin-top: 70px; /* Add space between social container and webpage links */
     }
 
