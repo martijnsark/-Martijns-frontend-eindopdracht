@@ -313,6 +313,7 @@ footer p:hover {
             top: 15vh; /* Adjust position */
             text-align: center;
             margin-left: 50px;
+            left: 50%;
         }
 
     /* Center the logo and reduce padding */

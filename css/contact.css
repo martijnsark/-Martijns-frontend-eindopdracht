@@ -122,6 +122,11 @@ main {
     padding-bottom: 160px;
 }
 
+.form-titel {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .form {
     background-color: #fff;
     padding: 20px;
