@@ -12,7 +12,7 @@ nav {
     justify-content: flex-end; 
     align-items: center; 
     padding: 10px; 
-    padding-right: 60px;
+    padding-right: 70px;
 }
 
 a {
@@ -110,6 +110,19 @@ a:hover{
     top: 0;            
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 main {
     display: flex;
@@ -201,7 +214,6 @@ footer {
     background-color: black;
     color: whitesmoke;
     position: relative; /* Establish a positioning context for absolute positioning */
-    height: var(--footer-height); /* Ensure the footer maintains its height */
 }
 
 .footer-logo-container {
@@ -289,17 +301,19 @@ footer p:hover {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
-    /* Adjust header height for mobile devices */
-    header {
-        height: 70vh; /* Reduce header height on mobile */
-        padding: 20px;
-    }
+        /* Adjust header height for mobile devices */
+        header {
+            height: 120vh; /* Reduce header height on mobile */
+            padding: 20px;
+        }
 
-    /* Adjust the size of header elements */
-    header h1 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
-        top: 15vh; /* Adjust position */
-    }
+        /* Adjust the size of header elements */
+        header h1 {
+            font-size: 1.5rem; /* Smaller font size for mobile */
+            top: 15vh; /* Adjust position */
+            text-align: center;
+            margin-left: 50px;
+        }
 
     /* Center the logo and reduce padding */
     .logo-container {
@@ -309,10 +323,10 @@ footer p:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1px; 
-        padding-left: 55px;
+        padding: 1px;
         padding-right: 55px;
-        margin-left: 220px; 
+        padding-left: 55px;
+        margin: 0 auto; /* Center the logo horizontally */
     }
 
     nav .black-box {
@@ -330,40 +344,56 @@ footer p:hover {
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center; /* Center the navbar buttons on mobile */
+        flex-direction: column; /* Stack the links vertically on mobile */
+        align-items: center; /* Center the links within the navbar */
+        padding: 10px 0; /* Adjust padding as needed */
     }
 
     nav a {
-        font-size: 14px; /* Smaller font for nav links */
         margin: 5px 0; /* Adjust margin to add space between links */
-        width: auto; /* Remove fixed width to allow for content */
-        display: block; /* Make links behave as block elements */
-        text-align: center; /* Center text within each link */
+        width: auto; /* Allow links to adjust their width automatically */
+        display: block; /* Ensure links are displayed as block elements */
+        text-align: center; /* Center the text inside the links */
     }
 
     /* Adjust main section padding */
     main {
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding-top: 100vh;  /* Adjust padding as needed */
+        padding-bottom: 100vh; /* Adjust padding as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
     }
 
-    /* Adjust form width and layout */
-    .form {
-        max-width: 100%; /* Make form span full width */
-        padding: 10px; /* Reduce padding */
+    .subheading {
+        text-align: center;  /* Center the subheading on mobile */
+        margin-right: 0;     /* Remove margin for mobile */
+        margin-bottom: 20px; /* Add some space below the subheading */
     }
 
-    .form-row {
-        flex-direction: column; /* Stack form fields vertically */
-        gap: 15px; /* Reduce gap between form groups */
+    .card-container {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Full width for mobile */
+        gap: 20px; /* Space between the cards */
     }
 
-    /* Adjust button width */
-    button {
-        width: 100%; /* Ensure button is full width */
-        font-size: 14px; /* Smaller button font size */
+    .card {
+        width: 90%; /* Make the card take up most of the screen width */
+        height: auto; /* Let the height adjust based on content */
+    }
+
+    .content-inside-card {
+        padding: 15px; /* Increase padding for mobile */
+    }
+
+    .card-image {
+        width: 100%; /* Ensure the image is responsive */
+        height: auto;
     }
 
     footer {
@@ -396,7 +426,7 @@ footer p:hover {
         width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 40px; /* Align with the social container */
         margin-top: 100px;
-        align-items:    start;
+        align-items: start;
     }
 
     .footer-logo-container {

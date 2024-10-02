@@ -103,6 +103,19 @@ a:hover{
     top: 0;            
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 main {
     padding-top: 120px;
     background-color: lightskyblue;
@@ -298,16 +311,18 @@ footer p:hover {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
-    /* Adjust header height for mobile devices */
+
+     /* Adjust header height for mobile devices */
     header {
-        height: 70vh; /* Reduce header height on mobile */
-        padding: 20px;
-    }
+        height: 120vh; /* Reduce header height on mobile */
+         padding: 20px;
+     }
 
     /* Adjust the size of header elements */
     header h1 {
         font-size: 1.5rem; /* Smaller font size for mobile */
         top: 15vh; /* Adjust position */
+        text-align: center;
     }
 
     /* Center the logo and reduce padding */
@@ -318,10 +333,10 @@ footer p:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1px; 
-        padding-left: 55px;
+        padding: 1px;
         padding-right: 55px;
-        margin-left: 220px; 
+        padding-left: 55px;
+        margin: 0 auto; /* Center the logo horizontally */
     }
 
     nav .black-box {
@@ -339,17 +354,17 @@ footer p:hover {
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center; /* Center the navbar buttons on mobile */
+        flex-direction: column; /* Stack the links vertically on mobile */
+        align-items: center; /* Center the links within the navbar */
+        padding: 10px 0; /* Adjust padding as needed */
     }
 
     nav a {
-        font-size: 14px; /* Smaller font for nav links */
         margin: 5px 0; /* Adjust margin to add space between links */
-        width: auto; /* Remove fixed width to allow for content */
-        display: block; /* Make links behave as block elements */
-        text-align: center; /* Center text within each link */
+        width: auto; /* Allow links to adjust their width automatically */
+        display: block; /* Ensure links are displayed as block elements */
+        text-align: center; /* Center the text inside the links */
     }
 
     /* Adjust main section padding */
@@ -405,7 +420,7 @@ footer p:hover {
         width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 40px; /* Align with the social container */
         margin-top: 100px;
-        align-items:    start;
+        align-items:  start;
     }
 
     .footer-logo-container {
