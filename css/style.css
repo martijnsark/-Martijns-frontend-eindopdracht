@@ -67,7 +67,7 @@ header {
 header h1 {
     position: absolute;
     top: 23vh;  
-    left: 50%;
+    left: 57%;
     transform: translateX(-85%);
     font-size: 3rem;
     margin: 0;
