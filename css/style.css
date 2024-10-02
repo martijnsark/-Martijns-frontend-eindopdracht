@@ -371,7 +371,7 @@ footer p:hover {
         flex-direction: column; /* Stack items vertically */
         align-items: flex-start; /* Align children to the left */
         padding: 20px; /* Reduce padding */
-        padding-bottom: 480px; /* Adjust bottom padding */
+        padding-bottom: 300px; /* Adjust bottom padding */
     }
     
     /* Adjust copyright position */
@@ -395,11 +395,25 @@ footer p:hover {
         flex-direction: column; /* Stack links vertically */
         width: calc(100% - 120px); /* Adjust width to account for margin */
         margin-left: 40px; /* Align with the social container */
-        margin-top: 70px;
+        margin-top: 100px;
+        align-items:    start;
     }
 
+    .footer-logo-container {
+        width: 25px; 
+        height: 60px; 
+        background-color: rgb(42, 50, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    
+
     .footer-webpage-links p {
-        margin: 10px 0; /* Add vertical spacing between each paragraph */
+        margin: 30px 0; /* Add vertical spacing between each paragraph */
         padding: 0; /* Remove padding */
         text-align: left; /* Align text to the left */
     }
