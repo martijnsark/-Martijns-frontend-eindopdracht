@@ -43,8 +43,11 @@ a {
 .logo {
     width: 35px;
     height: 35px;
+     /*object fit to ensure image size*/
+     object-fit: cover;
 }
 
+/*class + background and text*/
 .black-box {
     background-color: black;
     border-radius: 5px; 
@@ -66,6 +69,8 @@ header {
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat;
+     /*object fit to ensure image size*/
+     object-fit: cover;
 }
 
 header h1 {
@@ -101,6 +106,7 @@ header a {
     transition: background-color 0.3s; 
 }
 
+/*Pseudo-Class*/
 a:hover{
     background-color: darkcyan;
 }
@@ -174,6 +180,8 @@ main {
 .card-image {
     width: 100%;
     height: auto; 
+     /*object fit to ensure image size*/
+     object-fit: cover;
 }
 
 .star-rating {
@@ -265,6 +273,7 @@ footer {
     padding: 5px 15px; 
 }
 
+/*Pseudo-Class*/
 footer p:hover {
     text-decoration: underline; 
 }
@@ -278,9 +287,6 @@ footer p:hover {
         top: 20vh; 
     }
 }
-
-
-
 
 
 

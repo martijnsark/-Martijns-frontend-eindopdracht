@@ -43,8 +43,11 @@ a {
 .logo {
     width: 35px;
     height: 35px;
+     /*object fit to ensure image size*/
+     object-fit: cover;
 }
 
+/*class + background and text*/
 .black-box {
     background-color: black;
     border-radius: 5px; 
@@ -69,6 +72,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/*Descendant Selector*/
 header p {
     text-align: center;
     margin: 10px 0;
@@ -82,6 +86,7 @@ header p {
     margin-top: 20px;           
 }
 
+/*Descendant Selector*/
 header a {
     color: black; 
     text-decoration: none; 
@@ -93,6 +98,7 @@ header a {
     transition: background-color 0.3s; 
 }
 
+/*Pseudo-Class*/
 a:hover {
     background-color: darkcyan;
 }
@@ -125,11 +131,14 @@ main {
     padding-bottom: 160px;
 }
 
+
 .form-titel {
     text-align: center;
     margin-bottom: 60px;
 }
 
+/*you're supposed to enter all the content from left to right, top to bottom.
+ after that click "verzenden" button however the enter does not have any function yet*/
 .form {
     background-color: #fff;
     padding: 20px;
@@ -143,6 +152,7 @@ main {
     background-color: #fff;
 }
 
+/*Descendant Selector*/
 .form h1 {
     text-align: center;
     font-size: 24px;
@@ -158,6 +168,7 @@ main {
     margin-bottom: 5px;
 }
 
+/*Compound Selector*/
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -193,6 +204,7 @@ main {
     gap: 5px;
 }
 
+/*Compound Selector*/
 .radio-container input[type="radio"],
 .terms-group input[type="checkbox"] {
     margin-right: 10px;
@@ -229,6 +241,7 @@ button {
     cursor: pointer;
 }
 
+/*Pseudo-Class*/
 button:hover {
     background-color: #0056b3;
 }
@@ -302,6 +315,22 @@ footer p:hover {
         top: 20vh;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
