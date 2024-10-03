@@ -1,5 +1,6 @@
+/*pc/laptop code*/
+
 :root {
-    /*define size of website size on all laptops/computers*/
     --header-height: 100vh;
     --footer-height: 50px;
 }
@@ -60,14 +61,13 @@ header {
     align-items: center;     
     height: var(--header-height); 
     text-align: center;
-    
-    /*background color*/
+
+    /*background image*/
     background-color: rgb(160, 76, 199);
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat;
 }
-
 
 header p {
     text-align: center;
@@ -93,7 +93,7 @@ header a {
     transition: background-color 0.3s; 
 }
 
-a:hover{
+a:hover {
     background-color: darkcyan;
 }
 
@@ -135,7 +135,7 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Increase the width of the form */
+    max-width: 800px;
     margin: auto;
 }
 
@@ -150,7 +150,7 @@ main {
 }
 
 .form-group {
-    margin-bottom: 25px; /* Increased space between form groups */
+    margin-bottom: 25px;
 }
 
 .form-group label {
@@ -167,18 +167,16 @@ main {
     border-radius: 4px;
 }
 
-/* Fix for textarea */
 .form-group textarea {
-    height: 150px; /* Set fixed height */
-    resize: none; /* Prevent resizing */
+    height: 150px;
+    resize: none;
 }
 
-/* Flexbox for rows of two items */
 .form-row {
     display: flex;
     justify-content: space-between;
-    gap: 30px; /* Increase gap to 30 pixels */
-    margin-bottom: 25px; /* Added space below form rows */
+    gap: 30px;
+    margin-bottom: 25px;
 }
 
 .form-row .form-group {
@@ -186,31 +184,30 @@ main {
 }
 
 .radio-group {
-    margin-bottom: 25px; /* Increased space below the radio group */
+    margin-bottom: 25px;
 }
 
 .radio-container {
-    display: flex; /* Aligns items in a row */
-    align-items: center; /* Centers the radio buttons vertically */
-    gap: 5px; /* Reduced space between the radio buttons */
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .radio-container input[type="radio"],
 .terms-group input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and label */
-    width: auto; /* Adjust checkbox size */
-    height: auto; /* Adjust checkbox height */
+    margin-right: 10px;
+    width: auto;
+    height: auto;
 }
 
 .terms-group {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center the checkbox and label vertically */
+    display: flex;
+    align-items: center;
 }
 
-/* Optional: Adjust label spacing */
 .radio-container label {
-    margin: 0; /* Remove margin on labels */
-    padding: 0; /* Remove padding on labels */
+    margin: 0;
+    padding: 0;
 }
 
 #fullname {
@@ -236,19 +233,17 @@ button:hover {
     background-color: #0056b3;
 }
 
-
-
 .subheading {
     text-align: left;
     margin-right: 85%;
 }
 
 footer {
-    padding: 40px; /* Add 40px padding to create space from all sides */
-    padding-bottom: 160px; /* Adjust bottom padding to maintain total height */
+    padding: 40px;
+    padding-bottom: 160px;
     background-color: black;
     color: whitesmoke;
-    position: relative; /* Establish a positioning context for absolute positioning */
+    position: relative;
 }
 
 .footer-logo-container {
@@ -258,86 +253,72 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 40px; /* Add margin to keep it 40px away from all sides */
+    margin: 0 40px;
     padding-left: 55px;
     padding-right: 55px;
 }
 
-
 .copyright {
-    margin-top: 20px; /* 20px below the logo */
-    margin-left: 50px; /* Align with logo on the left */
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .footer-social-container {
     display: flex;
-    margin-left: 50px; /* Align with logo and copyright */
-    margin-top: 20px; /* 20px below the copyright */
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .footer-social-image {
-    margin-right: 10px; /* 10px gap between social images */
+    margin-right: 10px;
     width: 50px;
     height: 50px;
 }
 
 .footer-webpage-links {
-    position: absolute; /* Position absolutely within the footer */
-    right: 50px; /* Align to the right with 50px margin */
-    top: 120px; /* Align with the copyright height */
-    display: flex; /* Use flex for horizontal stacking */
-    flex-direction: row; /* Stack links horizontally */
-    align-items: center; /* Align links to the center vertically */
+    position: absolute;
+    right: 50px;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-/* spacing in the weblinks */
 .footer-webpage-links p {
-    margin: 0; /* Remove default margin */
-    padding: 5px 15px; /* Add horizontal spacing */
+    margin: 0;
+    padding: 5px 15px;
 }
 
 footer p:hover {
     text-decoration: underline; 
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     header {
-        height: 80vh; 
+        height: 80vh;
     }
     header h1 {
-        font-size: 2rem; 
-        top: 20vh; 
+        font-size: 2rem;
+        top: 20vh;
     }
 }
 
 
 
 
-
-
-
-
-
-
-
-/* Media Queries for Mobile Devices */
+/*mobile device exceptions*/
 @media (max-width: 480px) {
-
-     /* Adjust header height for mobile devices */
     header {
-        height: 120vh; /* Reduce header height on mobile */
-         padding: 20px;
-     }
+        height: 120vh;
+        padding: 20px;
+    }
 
-    /* Adjust the size of header elements */
     header h1 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
-        top: 15vh; /* Adjust position */
+        font-size: 1.5rem;
+        top: 15vh;
         text-align: center;
     }
 
-    /* Center the logo and reduce padding */
     .logo-container {
         background-color: black;
         width: 25px; 
@@ -348,91 +329,85 @@ footer p:hover {
         padding: 1px;
         padding-right: 55px;
         padding-left: 55px;
-        margin: 0 auto; /* Center the logo horizontally */
+        margin: 0 auto;
     }
 
     nav .black-box {
         background-color: black;
         color: whitesmoke;
-        width: 60vw; /* Maintain 60vw width for the black box */
+        width: 60vw;
     }
 
     .ul {
         display: flex; 
-        flex-direction: column; /* Stack links vertically */
-        justify-content: center; /* Center the links in the column */
-        align-items: center; /* Align links to center */
-        width: 100%; /* Ensure it spans full width */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     nav {
-        justify-content: center; /* Center the navbar buttons on mobile */
-        flex-direction: column; /* Stack the links vertically on mobile */
-        align-items: center; /* Center the links within the navbar */
-        padding: 10px 0; /* Adjust padding as needed */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
     }
 
     nav a {
-        margin: 5px 0; /* Adjust margin to add space between links */
-        width: auto; /* Allow links to adjust their width automatically */
-        display: block; /* Ensure links are displayed as block elements */
-        text-align: center; /* Center the text inside the links */
+        margin: 5px 0;
+        width: auto;
+        display: block;
+        text-align: center;
     }
 
-    /* Adjust main section padding */
     main {
         padding-top: 60px;
         padding-bottom: 100px;
     }
 
-    /* Adjust form width and layout */
     .form {
-        max-width: 100%; /* Make form span full width */
-        padding: 10px; /* Reduce padding */
+        max-width: 100%;
+        padding: 10px;
     }
 
     .form-row {
-        flex-direction: column; /* Stack form fields vertically */
-        gap: 15px; /* Reduce gap between form groups */
+        flex-direction: column;
+        gap: 15px;
     }
 
-    /* Adjust button width */
     button {
-        width: 100%; /* Ensure button is full width */
-        font-size: 14px; /* Smaller button font size */
+        width: 100%;
+        font-size: 14px;
     }
 
     footer {
-        display: flex; /* Ensure footer uses flexbox */
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align children to the left */
-        padding: 20px; /* Reduce padding */
-        padding-bottom: 300px; /* Adjust bottom padding */
-    }
-    
-    /* Adjust copyright position */
-    .copyright {
-        order: 1; /* Place copyright first */
-        margin-top: 40px; /* 20px below the logo */
-        margin-left: 40px; /* Align with logo on the left */
-    }
-    
-    /* Move social container beneath the copyright */
-    .footer-social-container {
-        order: 2; /* Ensure social container comes after copyright */
-        margin-left: 40px; /* Align with logo */
-        margin-bottom: 40px; /* Add some space below the social container */
-    }
-    
-    /* Ensure the webpage links are still positioned below */
-    .footer-webpage-links {
-        order: 3; /* Ensure webpage links come last */
         display: flex;
-        flex-direction: column; /* Stack links vertically */
-        width: calc(100% - 120px); /* Adjust width to account for margin */
-        margin-left: 40px; /* Align with the social container */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        padding-bottom: 300px;
+    }
+    
+    .copyright {
+        order: 1;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    
+    .footer-social-container {
+        order: 2;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-webpage-links {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 120px);
+        margin-left: 40px;
         margin-top: 100px;
-        align-items:  start;
+        align-items: start;
     }
 
     .footer-logo-container {
@@ -447,10 +422,9 @@ footer p:hover {
         padding-right: 55px;
     }
     
-
     .footer-webpage-links p {
-        margin: 30px 0; /* Add vertical spacing between each paragraph */
-        padding: 0; /* Remove padding */
-        text-align: left; /* Align text to the left */
+        margin: 30px 0; 
+        padding: 0; 
+        text-align: left; 
     }
 }
